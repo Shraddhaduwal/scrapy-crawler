@@ -19,7 +19,7 @@ class RatopatiSpider(scrapy.Spider):
             link = response.urljoin(link)
             yield scrapy.Request(link, callback=self.parse_article)
 
-        next_page = response.xpath('.//div[@class="ot-main-panel-pager"]/a/@href')[0].extract()
+        next_page = response.xpath('.//a[@class="next page-numbers"]/@href')[0].extract()
         if next_page:
             next_page = response.urljoin(next_page)
             yield scrapy.Request(next_page, dont_filter=True, callback=self.parse_link)
