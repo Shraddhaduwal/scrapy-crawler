@@ -6,9 +6,9 @@ This is a data-crawler made in `Scrapy`. The data from local newspapers is crawl
 `scrapy startproject <project_name>`
 
 ## Run Spider
-After navigating to the parent folder `<project_name>` 
-`scrapy crawl <spider_name>`
+After navigating to the parent folder `<project_name>` :
+- `scrapy crawl <spider_name>`
 
 ## Save the crawled data to different files
-`scrapy crawl <spider_name> -o <filename>.csv`
-`scrapy crawl <spider_name> -o <filename>.json`
+- `scrapy crawl <spider_name> -o <filename>.csv`
+- `scrapy crawl <spider_name> -o <filename>.json`
